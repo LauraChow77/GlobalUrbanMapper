@@ -4,6 +4,8 @@
 
 GlobalUrbanMapper is a project aimed for global urban mapping. This repository contains the code and resources developed as part of this study. It comprises of JavaScript code for multimodal imagery generation in GEE, the model used for global urban mapping, and a prediction code that leverages the mmsegmentation library.
 
+![Project Overview](GUM_snapshot_Suva.png)
+
 ## Table of Contents
 
 - [Installation and Setup](#installation-and-setup)
