@@ -1,4 +1,4 @@
-# `prediction_code` Directory for Global Urban Mapper (GUM)
+# `prediction_code` Directory
 
 Welcome to the prediction code directory of the Global Urban Mapper (GUM) project. This directory contains the necessary resources for running predictions using the `GUM` model, such as the dataset configuration file and the project launch arguments.
 
