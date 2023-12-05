@@ -10,7 +10,7 @@ This directory contains the following important files:
 
 - `model.pth`: This is the link to the pre-trained `GUM` model. You will need to download this model to use it for predictions.
 
-- ## Configuration File
+## Configuration File
 
 The `pspnet_unet_s5-d16.py` file is crucial for the functioning of the `GUM` model. It provides the configurations used during model training and prediction. 
 
