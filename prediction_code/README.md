@@ -10,12 +10,15 @@ This directory contains the following important files and resources:
 
 - `launch_arguments.txt`: This file contains the command-line arguments needed to launch the prediction project.
 
-## Using the Prediction Code
+## Dataset Configuration Guidelines
 
-To run predictions using the `GUM` model, follow these steps:
+To set up your dataset for running predictions, follow these detailed steps:
 
-1. Prepare your dataset following the guidelines in `gee_code` and make sure it is in the correct format (multimodal `.tif` images).
-2. Adjust the `dataset_config.py` file to match your specific dataset.
-3. Launch the prediction project with reference to the arguments provided in `launch_arguments.txt`.
-4. It's important to note that all paths, parameters, and arguments should be adjusted to fit your specific use case.
-5. 
+1. **Copy the Dataset Configuration File**:
+   Copy the `gum_dataset_config.py` file to the `mmsegmentation-master/configs/_base_/datasets` directory in your local `mmsegmentation-master` repository.
+
+2. **Modify the Loading Pipeline**: 
+   Update the `loading.py` file located at `mmsegmentation-master/mmseg/datasets/pipelines` by integrating the multimodal `.tif` image loading class and label loading class from the `load_multimodal_tif_n_load_annotation.py` file. Afterward, register the newly incorporated classes in the `__init__.py` file in the same directory.
+
+3. **Place and Register the GUM Dataset File**:
+   Place the `gum.py` file in the `mmsegmentation-master/mmseg/datasets` directory of your local `mmsegmentation-master` repository. Then, register it in the `__init__.py` file in the same directory.
