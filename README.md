@@ -2,7 +2,11 @@
 
 ## Introduction
 
-GlobalUrbanMapper is a project aimed for global urban mapping. This repository contains the code and resources developed as part of this study. It comprises of JavaScript code for multimodal imagery generation in GEE, the model used for global urban mapping, and a prediction code that leverages the mmsegmentation library.
+GlobalUrbanMapper is a comprehensive project specifically designed for the prediction of global urban areas. This project employs Sentinel-2, Sentinel-1, and SRTM satellite data sets to perform detailed urban mapping with a spatial resolution of 10m.
+
+This repository contains the JavaScript code for multimodal imagery generation with Google Earth Engine (GEE), the model used for global urban mapping, and a prediction code that leverages the mmsegmentation library. The model and the resources are suitable for the analysis of urban areas from the years 2018 to 2023.
+
+Whether you are an urban planner, researcher, or a scientist interested in understanding urban growth patterns on a global scale, GlobalUrbanMapper provides a powerful solution with its ability to process satellite data for accurate urban area prediction and analysis.
 
 ![Project Overview](GUM_snapshot_Suva.png)
 
@@ -19,6 +23,7 @@ Before starting with the project, make sure to fulfill the following prerequisit
 
 1. **Google Earth Engine Account:** Our project uses GEE for multimodal data generation. Make sure you have a GEE account that can be used to run the provided GEE code. If you don't have an account, visit [Google Earth Engine](https://courses.spatialthoughts.com/gee-sign-up.html#non-commercial-users) to sign up.
 2. **MMSegmentation**: The project relies on MMSegmentation version 0.29.0. For detailed installation instructions, please follow the guide in our [Get Started section](https://github.com/open-mmlab/mmsegmentation/blob/main/docs/en/get_started.md#installation).
+3. **Rasterio**: We use Rasterio for reading and writing raster data. You can install it using pip or conda.
 
 ## Usage Guidelines
 This repository includes three main components: the JavaScript code for data generation using Google Earth Engine, the global urban mapping model (i.e., GLobal Urban Mapper), and the prediction code using MMSegmentation. Here's how to use each component:
