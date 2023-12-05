@@ -16,10 +16,10 @@ var ImgDataGeneration = require("users/Laura_Chow77/default:utils/ImgDataGenerat
 // Section 3: User-defined variables
 // -----------------------------------------------------------------------------
 var userVars = {
-  geometry: image.geometry(),
-  start_date: '2019-01-01',
-  end_date: '2020-01-01',
-  name: '' // (export image name)
+  geometry: image.geometry(), // replace with your specific geometry
+  start_date: '2019-01-01', // replace with your specific start date
+  end_date: '2020-01-01', // replace with your specific end date
+  name: '' // replace with your specific export image name
 };
 
 // -----------------------------------------------------------------------------
