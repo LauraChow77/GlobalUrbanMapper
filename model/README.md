@@ -1,4 +1,4 @@
-# Model Directory
+# `Model` Directory
 
 Welcome to the model directory of the Global Urban Mapper (GUM) project. This directory provides essential resources needed to use the `GUM` model, including the configuration file and the model file link.
 
