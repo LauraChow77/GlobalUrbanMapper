@@ -22,8 +22,6 @@ Whether you are an urban planner, researcher, or a scientist interested in under
 Before starting with the project, make sure to fulfill the following prerequisites:
 
 1. **Google Earth Engine Account:** Our project uses GEE for multimodal data generation. Make sure you have a GEE account that can be used to run the provided GEE code. If you don't have an account, visit [Google Earth Engine](https://courses.spatialthoughts.com/gee-sign-up.html#non-commercial-users) to sign up.
-2. **MMSegmentation**: The project relies on MMSegmentation version 0.29.0. For detailed installation instructions, please follow the guide in our [Get Started section](https://github.com/open-mmlab/mmsegmentation/blob/main/docs/en/get_started.md#installation).
-3. **Rasterio**: We use Rasterio for reading and writing raster data. You can install it using pip or conda.
 
 ## Usage Guidelines
 This repository includes three main components: the JavaScript code for data generation using Google Earth Engine, the global urban mapping model (i.e., GLobal Urban Mapper), and the prediction code using MMSegmentation. Here's how to use each component:
@@ -32,7 +30,7 @@ This repository includes three main components: the JavaScript code for data gen
 
 2. **Global Urban Mapper**: You can find the model in the `model` directory.
 
-3. **Prediction Code Using MMSegmentation**: The prediction code is in the `prediction_code` directory. Before running the code, make sure you have MMSegmentation v0.29.0 installed. The code should be run after the data generation step is complete and the generated data is ready to be used. 
+3. **Prediction Code Using MMSegmentation**: The prediction code is in the `prediction_code` directory. Ensure that the generated data is prepared and accessible, and that both the model checkpoint and its corresponding configuration file have been downloaded before executing the prediction code.
 
 Please note that any paths or parameters mentioned in the code should be adjusted to fit your specific use case. For help or more information, refer to the individual README files in each directory or raise an issue in the GitHub repository.
 
