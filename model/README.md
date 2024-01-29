@@ -6,12 +6,10 @@ Welcome to the model directory of the Global Urban Mapper (GUM) project. This di
 
 This directory contains the following important files:
 
-- `pspnet_unet_s5-d16.py`: This is the configuration file for the `GUM` model. It outlines the parameters and settings that the model uses during training and prediction.
+- `unet_config.py`: The configuration script for the GUM model detailing the model's parameters and operational settings for both training and inference phases.
 
-- `model.pth`: This is the link to the pre-trained `GUM` model. You will need to download this model to use it for predictions.
+- `model.pth`: A link to the pre-trained GUM model checkpoint. To utilize the model for prediction, you must download this checkpoint.
 
 ## Configuration File
 
-The `pspnet_unet_s5-d16.py` file is crucial for the functioning of the `GUM` model. It provides the configurations used during model training and prediction. 
-
-If this configuration file doesn't already exist in your `mmsegmentation-master\configs\_base_\models` directory, you can place it there. 
+The `unet_config.py` file is critical to the GUM model's operation, as it dictates the model's configurations for training and inference. Ensure you download both the configuration script and the model checkpoint, storing them in your Google Drive for seamless integration with prediction workflows.
