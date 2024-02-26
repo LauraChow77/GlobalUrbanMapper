@@ -16,10 +16,10 @@ var ImgDataGeneration = require("users/Laura_Chow77/default:utils/ImgDataGenerat
 // Section 3: User-defined variables
 // -----------------------------------------------------------------------------
 var userVars = {
-  geometry: image.geometry(), // replace with your specific geometry
-  start_date: '2019-01-01', // replace with your specific start date
-  end_date: '2020-01-01', // replace with your specific end date
-  name: '' // replace with your specific export image name
+  geometry: image.geometry(),
+  start_date: '2019-01-01',
+  end_date: '2020-01-01',
+  name: '' // (export image name)
 };
 
 // -----------------------------------------------------------------------------
@@ -38,12 +38,14 @@ function calculateGeographicalInfo() {
 function generateMulimodalImagery(geometry_bbox, start_date, end_date) {
   var s2_coll = ImgDataGeneration.genSentinel2Data(geometry_bbox, [start_date, end_date], ['B4', 'B3', 'B2', 'B8']);
   var crs = s2_coll.first().projection().crs();
-  var s1_coll = ImgDataGeneration.genSentinel1Data(geometry_bbox, [start_date, end_date], crs);
+  var s1_coll_list = ImgDataGeneration.genSentinel1Data(geometry_bbox, [start_date, end_date], crs);
   
   var topo = ImgDataGeneration.genTopoData();
 
   var projection = s2_coll.first().projection();
-  var s1 = ee.ImageCollection(s1_coll).mean().select(['VV', 'VH']).toFloat(); 
+  var s1_ascending = s1_coll_list[0].mean();
+  var s1_descending = s1_coll_list[1].mean();
+  var s1 = s1_ascending.addBands(s1_descending).toFloat();
   var s2 = s2_coll.median().divide(10000).toFloat(); 
   var topo = topo.resample('bilinear').reproject({crs: projection, scale: 10}).toFloat();
 
