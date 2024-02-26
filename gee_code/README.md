@@ -6,7 +6,7 @@ This directory contains the JavaScript code for data generation using Google Ear
 
 The `data_generation.js` script is designed to generate multimodal imagery data given a specific geometry and time span. The data includes Sentinel-2 (self-defined bands), Sentinel-1 (VV and VH), and SRTM (including elevation, slope, and aspect) imagery.
 
-To use this script, please copy the code to [Google Earth Engine's Code Editor](https://code.earthengine.google.com/4aa50b096b90c62519418c488faea92c?noload=true) and run it. Remember to replace any placeholders (such as `image.geometry()`, `'2019-01-01'`, `'2020-01-01'`, and `''` in `userVars`) with your specific parameters. 
+To use this script, please copy the code to [Google Earth Engine's Code Editor]([https://code.earthengine.google.com/4aa50b096b90c62519418c488faea92c?noload=true](https://code.earthengine.google.com/986aeacca47f4f82544d2e80ac23d21a?noload=true) and run it. Remember to replace any placeholders (such as `image.geometry()`, `'2019-01-01'`, `'2020-01-01'`, and `''` in `userVars`) with your specific parameters. 
 
 ```javascript
 var userVars = {
