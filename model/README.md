@@ -6,7 +6,7 @@ Welcome to the model directory of the Global Urban Mapper (GUM) project. This di
 
 This directory contains the following important files:
 
-- `unet_config.py`: The configuration script for the GUM model detailing the model's parameters and operational settings for both training and inference phases.
+- `unet_newest_version.py`: The configuration script for the GUM model detailing the model's parameters and operational settings for both training and inference phases.
 
 - `model.pth`: A link to the pre-trained GUM model checkpoint. To utilize the model for prediction, you must download this checkpoint.
 
