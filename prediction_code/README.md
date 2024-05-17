@@ -6,7 +6,7 @@ This is the prediction code directory for the Global Urban Mapper (GUM) project.
 
 This directory contains the following important files and resources:
 
-- `global_urban_mapping_opensource.ipynb`: A Colab notebook designed for executing the global urban mapping process. It can be accessed directly at [this link](https://colab.research.google.com/drive/1wVcB7Fc3w0kg2ey2q61X7P91ru0NovQs?usp=sharing).
+- `global_urban_mapping_os.ipynb`: A Colab notebook designed for executing the global urban mapping process.
 
 ## Making Predictions
 To initiate the urban mapping prediction with the `GUM` model, please refer to the instructions and code within `global_urban_mapping_opensource.ipynb`.
