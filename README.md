@@ -33,7 +33,7 @@ This repository includes three main components: the JavaScript code for data gen
 ### Mapping with GlobalUrbanMapper
 - **Generate Data**: Navigate to `gee_code`, use `data_generation.js` in Google Earth Engine to generate imagery. Customize parameters as necessary.
 - **Model Setup**: Access the pretrained model in the `model` directory.
-- **Run Predictions**: After configuring the model and downloading necessary files,  execute the `global_urban_mapping_opensource.ipynb` in `prediction_code`.
+- **Run Predictions**: After configuring the model and downloading necessary files,  execute the `global_urban_mapping_os.ipynb` in `prediction_code`.
 
 ### Transfer Learning Based on GlobalUrbanMapper
 
