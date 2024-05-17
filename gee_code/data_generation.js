@@ -11,15 +11,16 @@
 // -----------------------------------------------------------------------------
 var UniversalTools = require("users/Laura_Chow77/default:utils/UniversalTools");
 var ImgDataGeneration = require("users/Laura_Chow77/default:utils/ImgDataGeneration");
+var PreprocessProduct = require("users/Laura_Chow77/default:utils/PreprocessProduct");
 
 // -----------------------------------------------------------------------------
 // Section 3: User-defined variables
 // -----------------------------------------------------------------------------
 var userVars = {
-  geometry: image.geometry(),
+  geometry: geometry,
   start_date: '2019-01-01',
   end_date: '2020-01-01',
-  name: '' // (export image name)
+  name: 'HongKong' // (export image name)
 };
 
 // -----------------------------------------------------------------------------
@@ -67,11 +68,16 @@ function main() {
   var imagery = generateMulimodalImagery(geometry_bbox, userVars.start_date, userVars.end_date);
   var multimodal_imagery = imagery.s2.addBands(imagery.s1).addBands(imagery.topo);
 
+  var esa = PreprocessProduct.preprocess_esa_2020().unmask(0).rename('b1');
+  var gisa = PreprocessProduct.preprocess_gisa_2019().mosaic().unmask(0).rename('b1');
+  var wsf = PreprocessProduct.preprocess_wsf_2019().mosaic().unmask(0).rename('b1');
+  var multimodal_imagery_with_products = multimodal_imagery.addBands(esa.toFloat()).addBands(gisa.toFloat()).addBands(wsf.toFloat());
+  
   // Export imagery
   // (customize the export parameters as needed)
   var crs = imagery.projection.crs().getInfo();
   Export.image.toDrive({
-    image: multimodal_imagery,
+    image: multimodal_imagery_with_products,
     region: geometry_bbox,
     scale: 10,
     crs: crs,
