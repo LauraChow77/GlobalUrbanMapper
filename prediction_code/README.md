@@ -9,4 +9,4 @@ This directory contains the following important files and resources:
 - `global_urban_mapping_os.ipynb`: A Colab notebook designed for executing the global urban mapping process.
 
 ## Making Predictions
-To initiate the urban mapping prediction with the `GUM` model, please refer to the instructions and code within `global_urban_mapping_opensource.ipynb`.
+To initiate the urban mapping prediction with the `GUM` model, please refer to the instructions and code within `global_urban_mapping_os.ipynb`.
