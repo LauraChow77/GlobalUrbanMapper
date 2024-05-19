@@ -30,14 +30,14 @@ var userVars = {
 ```
 ## `patch_data_generation.ipynb` File
 
-The `patch_data_generation.ipynb` script is desgined to download patch multimodal data (with/without product data) given the corresponding geometries (in FeatureCollection format). This process is done using GEE Python API, which is more suitable for batch file download.
+The `patch_data_generation.ipynb` notebook is designed to download patch multimodal data, which may include product data, based on specified geometries (in FeatureCollection format). This download process utilizes the GEE Python API, which is more suitable for batch file downloads than Javascript API.
 
-Execute the code from top to bottom after filling the needed parameters can do the job.
+To use this script, simply fill in the required parameters and execute the code sequentially from top to bottom.
 
 ## `clip_patch_data.ipynb` File
 
-The `clip_patch_data.ipynb` script is desgined to clip the black border (issues from GEE) of patch-based multimodal imagery.
+The `clip_patch_data.ipynb` notebook is designed to remove the black borders that commonly appear in patch-based multimodal imagery as a result of processing in GEE.
 
-Execute the code from top to bottom after filling the needed parameters can do the job.
+To use this script, simply fill in the required parameters and execute the code sequentially from top to bottom.
 
 Please note that any paths or parameters mentioned in the code should be adjusted to fit your specific use case. If you need help or further information, feel free to ask for help or raise an issue in the GitHub repository.
