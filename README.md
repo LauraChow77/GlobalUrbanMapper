@@ -54,7 +54,7 @@ To facilitate the search for relevant data products and reduce the time spent on
 - **Run Predictions**: Configure the model and download the necessary patch files, then execute the `global_urban_mapping_os.ipynb` notebook in the `prediction_code` directory.
   
 ## Citation
-If you find GUM helpful, please cite [our paper](https://www.sciencedirect.com/science/article/pii/S0034425724002591).
+If you find GUM helpful, please cite [our paper](https://www.sciencedirect.com/science/article/pii/S0034425724002608).
 
 ## Contact Information
 If you have any questions or need further clarification about the project, feel free to reach out by emailing us at [22042458r@connect.polyu.hk](mailto:22042458r@connect.polyu.hk) or by posting an issue on our repository. We welcome any suggestions!
