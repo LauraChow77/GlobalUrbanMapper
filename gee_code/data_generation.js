@@ -14,6 +14,10 @@ var ImgDataGeneration = require("users/Laura_Chow77/default:utils/ImgDataGenerat
 var PreprocessProduct = require("users/Laura_Chow77/default:utils/PreprocessProduct");
 
 // -----------------------------------------------------------------------------
+// Section 2: Data import and preprocessing
+// -----------------------------------------------------------------------------
+
+// -----------------------------------------------------------------------------
 // Section 3: User-defined variables
 // -----------------------------------------------------------------------------
 var userVars = {
@@ -22,10 +26,6 @@ var userVars = {
   end_date: '2020-01-01',
   name: '' // (export image name)
 };
-
-// -----------------------------------------------------------------------------
-// Section 2: Data import and preprocessing
-// -----------------------------------------------------------------------------
 
 // -----------------------------------------------------------------------------
 // Section 4: Helper functions
